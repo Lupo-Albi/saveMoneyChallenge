@@ -9,7 +9,7 @@ O intuito desse algoritmo é de calcular o quanto de dinheiro já foi guardado o
 ## Funcionalidades
 
 
-- [ ] Escolher a quantia a ser armazenada a cada depósito
-- [ ] Definir o intervalo de dias que cada depósito deve ser feito
-- [ ] Escolher a data que os depósitos devem ser iniciados e finalizados
-- [ ] Possibilidade de incrementar o valor depósito em cada intervalo
+- [x] Escolher a quantia a ser armazenada a cada depósito
+- [x] Definir o intervalo de dias que cada depósito deve ser feito
+- [x] Escolher a data que os depósitos devem ser iniciados e finalizados
+- [x] Possibilidade de incrementar o valor depósito em cada intervalo
