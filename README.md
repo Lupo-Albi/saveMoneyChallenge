@@ -13,4 +13,4 @@ O intuito desse algoritmo é de calcular o quanto de dinheiro já foi guardado o
 - [x] Definir o intervalo de dias que cada depósito deve ser feito
 - [x] Escolher a data que os depósitos devem ser iniciados e finalizados
 - [x] Possibilidade de incrementar o valor depósito em cada intervalo
-- [ ] Saber o valor e a data do próximo depósito a ser feito
+- [x] Saber o valor e a data do próximo depósito a ser feito
