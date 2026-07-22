@@ -1,18 +1,25 @@
 ---
-import "../styles/global.css";
 import Input from "./Input.astro";
-
-const { title } = Astro.props;
 ---
 
-<h1 class="text-3xl font-bold underline">{title}</h1>
-
-<form action="/index.html" method="post">
+<form class="flex flex-row flex-wrap gap-4" action="/index.html" method="post">
   <Input title="startDate" type="date" />
   <Input title="endDate" type="date" />
-  <Input title="initialInvestment" type="number" />
-  <Input title="investmentInterval" type="number" />
-  <Input title="increment" type="number" />
+  <Input
+    title="initialInvestment"
+    type="number"
+    placeholder="Investimento inicial"
+  />
+  <Input
+    title="investmentInterval"
+    type="number"
+    placeholder="Intervalo de investimento em dias"
+  />
+  <Input
+    title="increment"
+    type="number"
+    placeholder="Incremento do investimento"
+  />
 
-  <button type="submit">Calcular</button>
+  <button class="bg-sky-500 hover:bg-sky-700" type="submit">Calcular</button>
 </form>
