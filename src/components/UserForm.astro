@@ -2,24 +2,33 @@
 import Input from "./Input.astro";
 ---
 
-<form class="flex flex-row flex-wrap gap-4" action="/index.html" method="post">
-  <Input title="startDate" type="date" />
-  <Input title="endDate" type="date" />
+<form
+  class="flex flex-row flex-wrap gap-4 justify-center content-center"
+  action="/index.html"
+  method="post"
+>
+  <Input title="startDate" type="date" label="Data inicial" />
+  <Input title="endDate" type="date" label="Data final" />
   <Input
     title="initialInvestment"
     type="number"
-    placeholder="Investimento inicial"
+    label="Investimento inicial"
+    placeholder="20"
   />
   <Input
     title="investmentInterval"
     type="number"
-    placeholder="Intervalo de investimento em dias"
+    label="Intervalo de investimento (em dias)"
+    placeholder="7"
   />
   <Input
     title="increment"
     type="number"
-    placeholder="Incremento do investimento"
+    label="Incremento a cada investimento em reais"
+    placeholder="1"
   />
 
-  <button class="bg-sky-500 hover:bg-sky-700" type="submit">Calcular</button>
+  <button class="basis-lg bg-sky-500 hover:bg-sky-700" type="submit"
+    >Calcular</button
+  >
 </form>

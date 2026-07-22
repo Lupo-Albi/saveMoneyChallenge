@@ -26,10 +26,20 @@ type HTMLInputTypeAttribute =
 interface Props {
   title: string;
   type: HTMLInputTypeAttribute;
+  label: string;
   placeholder?: string;
 }
 
-const { title, type, placeholder } = Astro.props;
+const { title, type, placeholder, label } = Astro.props;
 ---
 
-<input class="basis-lg" name={title} type={type} placeholder={placeholder} />
+<div class="flex basis-lg gap-x-10">
+  <label class="basis-md" for={title}>{label}</label>
+  <input
+    class="basis-md"
+    name={title}
+    id={title}
+    type={type}
+    placeholder={placeholder}
+  />
+</div>
