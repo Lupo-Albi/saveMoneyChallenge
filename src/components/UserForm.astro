@@ -1,10 +1,11 @@
 ---
+import "../styles/global.css";
 import Input from "./Input.astro";
 
 const { title } = Astro.props;
 ---
 
-<h1>{title}</h1>
+<h1 class="text-3xl font-bold underline">{title}</h1>
 
 <form action="/index.html" method="post">
   <Input title="startDate" type="date" />
